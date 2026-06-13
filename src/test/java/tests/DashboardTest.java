@@ -26,6 +26,7 @@ public void verifyDashboardTitle() {
 
     String actualTitle =
             dashboard.getDashboardTitle();
+    System.out.println(actualTitle);
 
     assertEquals(
             actualTitle,
