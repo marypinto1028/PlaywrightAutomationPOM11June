@@ -1,14 +1,14 @@
 package tests;
 
-import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import base.BaseTest;
+import pages.DashboardPage;
 import pages.LoginPage;
 import utilities.ExcelUtil;
-import utilities.ExtentManager;
 import utilities.ExtentTestManager;
-import pages.DashboardPage;
 
 public class LoginTest extends BaseTest {
 
@@ -32,5 +32,7 @@ public class LoginTest extends BaseTest {
 		DashboardPage dash = new DashboardPage(page);
 
 		assertEquals(dash.getDashboardTitle(), "Dashboard");
+		//If you want to see the screenshot of failure under reports>screenshots, uncomment the below
+		//Assert.fail("Intentional failure");
 	}
 }

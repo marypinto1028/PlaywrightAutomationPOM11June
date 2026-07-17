@@ -25,5 +25,6 @@ public class ConfigReader {
 
     public static String getBrowser() {
         return prop.getProperty("browser");
+        
     }
 }
